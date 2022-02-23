@@ -1,0 +1,13 @@
+{
+  "name": "alexrodin.info",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "dependencies": {
+    "compression": "1.7.4",
+    "express": "4.17.1",
+    "node-sass": "^7.0.1"
+  }
+}
