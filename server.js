@@ -1,5 +1,5 @@
-var express = require('express');
-var compression = require('compression');
+var express = require("express");
+var compression = require("compression");
 
 var app = express();
 
@@ -7,12 +7,14 @@ var app = express();
 app.use(compression());
 
 // Serve static files from `dist` dir.
-app.use(express.static('public', {
-    maxAge: '1y'
-}));
+app.use(
+  express.static("public", {
+    maxAge: "1y",
+  })
+);
 
-var PORT = 3060;
+var PORT = process.env.PORT || 3060;
 
 app.listen(PORT, function () {
-    console.log('Server listening on port ' + PORT);
+  console.log("Server listening on port " + PORT);
 });
